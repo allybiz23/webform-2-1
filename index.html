@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Form</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h2>IT Support Request Form</h2>
+
+    <form id="ticketForm" onsubmit="return validateInputForm(this);">
+        <label for="ReqDate">Request Date:</label>
+        <input type="text" id="ReqDate" name="ReqDate" placeholder="mm/dd/yyyy" required>
+
+        <label for="EmpID">Employee ID:</label>
+        <input type="text" id="EmpID" name="EmpID" placeholder="A12345" required>
+
+        <label for="FName">First Name:</label>
+        <input type="text" id="FName" name="FName" placeholder="John" required>
+
+        <label for="LName">Last Name:</label>
+        <input type="text" id="LName" name="LName" placeholder="Doe" required>
+
+        <label for="ProbDesc">Problem Description:</label>
+        <textarea id="ProbDesc" name="ProbDesc" rows="4" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+    <form id="ticketForm" onsubmit="return validateInputForm(this);">
+        
+    </form>
+
+</body>
+
+</html>
